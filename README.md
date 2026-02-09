@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio Profissional – Desenvolvedor Full Stack
 
-## Getting Started
+Este repositório contém o código-fonte do meu **portfólio profissional**, desenvolvido com foco em performance, boas práticas de engenharia de software e experiência do usuário.
 
-First, run the development server:
+O projeto apresenta minhas principais habilidades técnicas, stacks de desenvolvimento e exemplos práticos do meu trabalho como **Desenvolvedor Full Stack**.
+
+---
+
+## 🚀 Tecnologias Principais
+
+Este projeto foi construído utilizando tecnologias modernas amplamente adotadas pelo mercado:
+
+* **Next.js** – Framework React para aplicações web modernas
+* **React** – Criação de interfaces reutilizáveis
+* **TypeScript** – Tipagem estática para maior segurança e escalabilidade
+* **Node.js** – Ambiente de execução JavaScript no backend
+* **Tailwind CSS** – Estilização utilitária e responsiva
+
+---
+
+## 🧠 Conhecimentos Técnicos
+
+Além das tecnologias utilizadas neste projeto, possuo experiência com:
+
+* **Frameworks & Bibliotecas**: Next.js, React, Vue.js
+* **Estilização**: Tailwind CSS, Bootstrap, SCSS
+* **Backend**: Node.js, Python, Django
+* **CMS**: WordPress
+* **DevOps & Infra**: Docker
+* **Metodologias Ágeis**: Scrum, Kanban
+* **Sistemas Operacionais**: Windows
+
+---
+
+## 🛠️ IDEs e Ferramentas
+
+Ferramentas utilizadas no desenvolvimento:
+
+* **Visual Studio Code**
+* **Antigravity (Google IDE)**
+
+---
+
+## ▶️ Como executar o projeto localmente
+
+Clone o repositório e instale as dependências:
+
+```bash
+npm install
+```
+
+Em seguida, inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
+# ou
 pnpm dev
-# or
-bun dev
+# ou
+yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação estará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📁 Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+* `app/` – Estrutura principal utilizando App Router do Next.js
+* `components/` – Componentes reutilizáveis
+* `styles/` – Estilos globais e configurações do Tailwind
+* `public/` – Arquivos estáticos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Objetivo do Projeto
 
-## Deploy on Vercel
+Este portfólio tem como objetivo:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Demonstrar domínio técnico em desenvolvimento web moderno
+* Aplicar boas práticas de código, organização e performance
+* Servir como vitrine profissional para oportunidades na área de tecnologia
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🌐 Deploy
+
+O projeto pode ser facilmente publicado utilizando a **Vercel**, plataforma oficial do Next.js:
+
+👉 [https://vercel.com](https://vercel.com)
+
+---
+
+## 📬 Contato
+
+Caso queira conversar sobre oportunidades, projetos ou colaboração:
+
+* LinkedIn: *https://www.linkedin.com/in/igoralexandria/*
+* GitHub: *https://github.com/igoralexandria-ia*
+* E-mail: *igoralexandriafullstack@gmail.com*
+
+---
+
+⭐ Se este projeto te chamou atenção, fique à vontade para explorar o código!
