@@ -8,7 +8,6 @@ import {
   faTimes,
   faHome,
   faUser,
-  faBriefcase,
   faFileAlt,
   faFolderOpen,
   faComments,
@@ -36,7 +35,6 @@ const Header = ({ isSidebarOpen = true, setIsSidebarOpen }: HeaderProps) => {
     { id: "about", label: "Sobre Mim", icon: faUser },
     { id: "skills", label: "Skills", icon: faCode },
     { id: "resume", label: "Resumo", icon: faFileAlt },
-    { id: "services", label: "Serviços", icon: faBriefcase },
     { id: "portfolio", label: "Portfólio", icon: faFolderOpen },
     { id: "testimonials", label: "Depoimentos", icon: faComments },
     { id: "contact", label: "Contato", icon: faEnvelope },
@@ -149,7 +147,7 @@ const Header = ({ isSidebarOpen = true, setIsSidebarOpen }: HeaderProps) => {
                 <li key={item.id}>
                   <button
                     onClick={() => scrollToSection(item.id)}
-                    className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 ${
+                    className={`w-full flex items-center cursor-pointer gap-3 px-4 py-3 rounded-lg transition-all duration-300 ${
                       activeSection === item.id
                         ? "bg-primary text-white"
                         : "text-light-muted hover:bg-dark-3 hover:text-light"

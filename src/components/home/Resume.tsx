@@ -54,7 +54,7 @@ const Resume = () => {
     {
       year: "2024 - 2025",
       title: "Bolsista de TI",
-      company: "Secretaria de Estado da Administração do RN (SEAD-RN) / Coordenadoria de Tecnologia da Informação e Comunicação (COTIC)",
+      company: "SEAD-RN / COTIC",
       description: "Desenvolvimento de sites institucionais utilizando WordPress e React.",
     },
     {
@@ -95,7 +95,7 @@ const Resume = () => {
         >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 relative inline-block">
             Resumo
-            <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-primary rounded-full"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-primary rounded-full"></span>
             </h2>
             <p className="text-light-muted mt-4 max-w-2xl">
                 Minha trajetória acadêmica e profissional.

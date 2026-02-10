@@ -6,6 +6,10 @@ import HomeSection from "@/components/home/Home";
 import About from "@/components/home/About";
 import Skills from "@/components/home/Skills";
 import Resume from "@/components/home/Resume";
+import Portfolio from "@/components/sections/Portfolio";
+import Testimonials from "@/components/sections/Testimonials";
+import Contact from "@/components/sections/Contact";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -23,18 +27,13 @@ export default function Home() {
         <Skills />
         <Resume />
         
-        <section id="services" className="min-h-screen flex items-center justify-center bg-dark-1">
-          <h2 className="text-4xl font-bold text-light-muted">Serviços (Em Breve)</h2>
-        </section>
+        <Portfolio />
 
-        <section id="portfolio" className="min-h-screen flex items-center justify-center bg-dark-2">
-            <h2 className="text-4xl font-bold text-light-muted">Portfólio (Em Breve)</h2>
-        </section>
+        <Testimonials />
 
-        <section id="contact" className="min-h-screen flex items-center justify-center bg-dark-1">
-            <h2 className="text-4xl font-bold text-light-muted">Contato (Em Breve)</h2>
-        </section>
+        <Contact />
 
+        <Footer />
       </main>
     </div>
   );

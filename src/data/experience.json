@@ -1,0 +1,26 @@
+[
+  {
+    "company": "Indra/Minsait",
+    "role": "Junior Systems Engineer",
+    "period": "2025 - Atualmente",
+    "description": "Desenvolvimento e manutenção de sistemas institucionais utilizando Next.js, TypeScript, React, Node.js, TailwindCSS, PostgreSQL e WordPress."
+  },
+  {
+    "company": "Secretaria de Estado da Administração do RN (SEAD-RN) / COTIC",
+    "role": "Bolsista de TI",
+    "period": "2024 - 2025",
+    "description": "Desenvolvimento de sites institucionais utilizando WordPress e React."
+  },
+  {
+    "company": "Escola do Governo do RN",
+    "role": "Estagiário",
+    "period": "2022 - 2023",
+    "description": "Estágio em desenvolvimento de sistemas com Python e Django."
+  },
+  {
+      "company": "TERA",
+      "role": "Facilitador",
+      "period": "2022 - 2023",
+      "description": "Facilitação de cursos de tecnologia Full Stack Development."
+  }
+]

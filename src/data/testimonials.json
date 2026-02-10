@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "text": "Demonstrou forte domínio em desenvolvimento web com React e Next.js, sempre buscando soluções bem estruturadas, performáticas e fáceis de manter. Teve papel importante na organização do código e na evolução do projeto.",
+    "author": "Tech Lead",
+    "role": "Projeto Web Institucional",
+    "linkedIn": null
+  },
+  {
+    "id": 2,
+    "text": "Conseguiu traduzir regras de negócio complexas em interfaces simples e funcionais. Sempre preocupado com a experiência do usuário e com a entrega de soluções que realmente resolvessem o problema.",
+    "author": "Product Owner",
+    "role": "Sistema de Agendamentos",
+    "linkedIn": null
+  },
+  {
+    "id": 3,
+    "text": "Atuou diretamente na migração de um portal institucional para uma stack moderna, trazendo ganhos claros em performance, SEO e manutenibilidade. O resultado final foi um sistema mais estável e fácil de evoluir.",
+    "author": "Coordenador de TI",
+    "role": "Projeto de Modernização",
+    "linkedIn": null
+  },
+  {
+    "id": 4,
+    "text": "É um desenvolvedor organizado, colaborativo e com boa comunicação. Sempre aberto a feedbacks e com postura proativa para sugerir melhorias técnicas e de arquitetura.",
+    "author": "Desenvolvedor Full Stack",
+    "role": "Time de Tecnologia",
+    "linkedIn": null
+  },
+  {
+    "id": 5,
+    "text": "Cumpre prazos, documenta bem o que entrega e demonstra responsabilidade com o código em produção. É alguém em quem dá para confiar tarefas críticas do sistema.",
+    "author": "Gestor de Projeto",
+    "role": "Aplicação Web",
+    "linkedIn": null
+  }
+]
