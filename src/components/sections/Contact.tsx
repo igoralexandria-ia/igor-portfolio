@@ -2,8 +2,18 @@
 
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faMapMarkerAlt, faCopy, faCheck } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelope,
+  faMapMarkerAlt,
+  faCopy,
+  faCheck,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
 const Contact = () => {
@@ -23,7 +33,7 @@ const Contact = () => {
       url: "https://www.linkedin.com/in/igoralexandria/",
       color: "#0077B5",
       description: "Conecte-se profissionalmente",
-      action: "Conectar"
+      action: "Conectar",
     },
     {
       name: "GitHub",
@@ -31,7 +41,7 @@ const Contact = () => {
       url: "https://github.com/igoralexandria-ia",
       color: "#333",
       description: "Veja meus repositórios",
-      action: "Seguir"
+      action: "Seguir",
     },
     {
       name: "Instagram",
@@ -39,7 +49,7 @@ const Contact = () => {
       url: "https://instagram.com/1gor.alexandria",
       color: "#E1306C",
       description: "Acompanhe meu dia a dia",
-      action: "Seguir"
+      action: "Seguir",
     },
     {
       name: "WhatsApp",
@@ -47,12 +57,15 @@ const Contact = () => {
       url: "https://wa.me/5584986309491",
       color: "#25D366",
       description: "Vamos conversar agora?",
-      action: "Enviar Mensagem"
-    }
+      action: "Enviar Mensagem",
+    },
   ];
 
   return (
-    <section id="contact" className="min-h-screen py-20 bg-dark-1 relative flex items-center">
+    <section
+      id="contact"
+      className="min-h-screen py-20 bg-dark-1 relative flex items-center"
+    >
       {/* Background Decorative Elements */}
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-[100px] pointer-events-none" />
@@ -67,11 +80,12 @@ const Contact = () => {
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 relative inline-block">
             Vamos Trabalhar Juntos?
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"></span>
+            <span className="hidden md:block absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"></span>
           </h2>
           <p className="text-light-muted text-lg max-w-2xl mx-auto">
             Estou sempre aberto a novas oportunidades e projetos desafiadores.
-            Se você tem uma ideia ou precisa de ajuda com seu projeto, entre em contato!
+            Se você tem uma ideia ou precisa de ajuda com seu projeto, entre em
+            contato!
           </p>
         </motion.div>
 
@@ -85,16 +99,22 @@ const Contact = () => {
             className="bg-dark-2 rounded-2xl p-8 border border-dark-3 flex flex-col justify-center space-y-8"
           >
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-white mb-4">Informações de Contato</h3>
-              
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Informações de Contato
+              </h3>
+
               {/* Location */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-dark-3 flex items-center justify-center text-primary flex-shrink-0">
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="w-5 h-5" />
                 </div>
-                <div>
-                  <h4 className="text-white font-medium text-lg">Localização</h4>
-                  <p className="text-light-muted">Disponível para trabalho remoto</p>
+                <div className="flex-1 min-w-0">
+                  <h4 className="text-white font-medium text-lg">
+                    Localização
+                  </h4>
+                  <p className="text-light-muted">
+                    Disponível para trabalho remoto
+                  </p>
                 </div>
               </div>
 
@@ -103,26 +123,35 @@ const Contact = () => {
                 <div className="w-12 h-12 rounded-full bg-dark-3 flex items-center justify-center text-primary flex-shrink-0">
                   <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <h4 className="text-white font-medium text-lg">Email</h4>
-                  <div className="flex items-center gap-3 mt-1 group cursor-pointer" onClick={handleCopyEmail}>
-                    <p className="text-light-muted group-hover:text-primary transition-colors">{email}</p>
-                    <button 
-                      className="text-dark-3 hover:text-primary transition-colors"
+                  <div
+                    className="flex items-center gap-2 mt-1 group cursor-pointer w-full"
+                    onClick={handleCopyEmail}
+                  >
+                    <p className="text-light-muted group-hover:text-primary transition-colors break-all flex-1">
+                      {email}
+                    </p>
+                    <button
+                      className="text-dark-3 hover:text-primary transition-colors flex-shrink-0 p-2"
                       title="Copiar email"
                     >
                       <FontAwesomeIcon icon={copied ? faCheck : faCopy} />
                     </button>
                   </div>
-                  {copied && <span className="text-xs text-green-500 mt-1 block">Copiado!</span>}
+                  {copied && (
+                    <span className="text-xs text-green-500 mt-1 block">
+                      Copiado!
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
 
             <div className="p-6 bg-dark-3/50 rounded-xl border border-dark-3/50">
-                <p className="text-light-muted italic">
-                    "A tecnologia é melhor quando aproxima as pessoas."
-                </p>
+              <p className="text-light-muted italic">
+                "A tecnologia é melhor quando aproxima as pessoas."
+              </p>
             </div>
           </motion.div>
 
@@ -138,20 +167,34 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="bg-dark-2 p-6 rounded-2xl border border-dark-3 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1 hover:shadow-xl"
+                className="bg-dark-2 p-6 rounded-2xl border border-dark-3 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1 hover:shadow-xl flex flex-col items-center sm:items-start text-center sm:text-left"
               >
-                <div 
-                    className="w-12 h-12 rounded-full flex items-center justify-center text-white mb-4 text-xl transition-transform group-hover:scale-110"
-                    style={{ backgroundColor: contact.color }}
+                <div
+                  className="w-12 h-12 rounded-full flex items-center justify-center text-white mb-4 text-xl transition-transform group-hover:scale-110"
+                  style={{ backgroundColor: contact.color }}
                 >
                   <FontAwesomeIcon icon={contact.icon} />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-2">{contact.name}</h4>
-                <p className="text-light-muted text-sm mb-4 min-h-[40px]">{contact.description}</p>
-                <span className="text-primary text-sm font-medium group-hover:underline flex items-center gap-2">
+                <h4 className="text-xl font-bold text-white mb-2">
+                  {contact.name}
+                </h4>
+                <p className="text-light-muted text-sm mb-4 min-h-[40px]">
+                  {contact.description}
+                </p>
+                <span className="text-primary text-sm font-medium group-hover:underline flex items-center justify-center sm:justify-start gap-2">
                   {contact.action}
-                  <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg
+                    className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
                   </svg>
                 </span>
               </motion.a>

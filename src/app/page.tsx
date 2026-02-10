@@ -16,9 +16,12 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen bg-dark-1 text-light">
-      <Header isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
-      <main 
-        className={`flex-1 relative min-w-0 overflow-x-hidden transition-all duration-300 ${
+      <Header
+        isSidebarOpen={isSidebarOpen}
+        setIsSidebarOpen={setIsSidebarOpen}
+      />
+      <main
+        className={`flex-1 relative min-w-0 overflow-x-hidden transition-all duration-300 ml-0 ${
           isSidebarOpen ? "lg:ml-64" : "lg:ml-0"
         }`}
       >
@@ -26,7 +29,7 @@ export default function Home() {
         <About />
         <Skills />
         <Resume />
-        
+
         <Portfolio />
 
         <Testimonials />

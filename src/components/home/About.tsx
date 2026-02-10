@@ -130,12 +130,12 @@ const About = () => {
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-row gap-2 md:gap-4 w-full md:w-auto">
               {isClient && (
                 <PDFDownloadLink
                   document={<ResumePDF userData={userData} />}
                   fileName="Curriculo_Igor_Alexandria.pdf"
-                  className="px-8 py-3 bg-primary text-white font-medium rounded-full hover:bg-primary-dark transition-all duration-300 flex items-center gap-2 shadow-lg shadow-primary/25 cursor-pointer"
+                  className="flex-1 md:flex-none justify-center px-4 md:px-8 py-3 bg-primary text-white text-sm md:text-base font-medium rounded-full hover:bg-primary-dark transition-all duration-300 flex items-center gap-2 shadow-lg shadow-primary/25 cursor-pointer whitespace-nowrap"
                 >
                   {({ loading }: { loading: boolean }) => (
                     <>
@@ -148,7 +148,7 @@ const About = () => {
 
               <a
                 href="#contact"
-                className="px-8 py-3 border border-light-muted/30 text-light font-medium rounded-full hover:bg-white/5 transition-all duration-300 flex items-center gap-2"
+                className="flex-1 md:flex-none justify-center px-4 md:px-8 py-3 border border-light-muted/30 text-light text-sm md:text-base font-medium rounded-full hover:bg-white/5 transition-all duration-300 flex items-center gap-2 whitespace-nowrap"
               >
                 Contrate-me
                 <FontAwesomeIcon icon={faArrowRight} className="text-primary" />

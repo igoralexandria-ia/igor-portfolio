@@ -107,20 +107,21 @@ const Header = ({ isSidebarOpen = true, setIsSidebarOpen }: HeaderProps) => {
       )}
 
       <header
-        className={`fixed top-0 left-0 h-screen z-50 transition-all duration-300 
+        className={`fixed top-0 left-0 h-screen z-50 transition-transform duration-300 
         ${isScrolled ? "bg-dark-2/95 backdrop-blur-sm" : "bg-dark-2"}
+        ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}
+        lg:translate-x-0
         ${isSidebarOpen ? "lg:translate-x-0" : "lg:-translate-x-full"}
-        lg:w-64 w-full lg:bg-dark-2/95`}
+        lg:w-64 w-64 lg:bg-dark-2/95`}
       >
         <div className="h-full flex flex-col p-6 relative">
-            
           {/* Close Button (Desktop) */}
           <button
-              onClick={toggleSidebar}
-              className="hidden lg:flex absolute top-4 right-4 text-light-muted hover:text-primary transition-colors cursor-pointer"
-              aria-label="Close sidebar"
-            >
-             <FontAwesomeIcon icon={faTimes} className="w-5 h-5" />
+            onClick={toggleSidebar}
+            className="hidden lg:flex absolute top-4 right-4 text-light-muted hover:text-primary transition-colors cursor-pointer"
+            aria-label="Close sidebar"
+          >
+            <FontAwesomeIcon icon={faTimes} className="w-5 h-5" />
           </button>
 
           {/* Profile Section */}
@@ -179,27 +180,26 @@ const Header = ({ isSidebarOpen = true, setIsSidebarOpen }: HeaderProps) => {
             </div>
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden fixed top-4 right-4 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-lg z-50"
-            aria-label="Toggle menu"
-          >
-            <FontAwesomeIcon
-              icon={isMenuOpen ? faTimes : faBars}
-              className="w-5"
-            />
-          </button>
+          {/* Mobile Menu Toggle  */}          
         </div>
-
-        {/* Mobile Menu Overlay */}
-        {isMenuOpen && (
-          <div
-            className="lg:hidden fixed inset-0 bg-dark-1/80 backdrop-blur-sm z-40"
-            onClick={() => setIsMenuOpen(false)}
-          />
-        )}
       </header>
+
+      {/* Mobile Menu Toggle Button */}
+      <button
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className="lg:hidden fixed top-4 right-4 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-lg z-[60] shadow-lg"
+        aria-label="Toggle menu"
+      >
+        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} className="w-5" />
+      </button>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div
+          className="lg:hidden fixed inset-0 bg-dark-1/80 backdrop-blur-sm z-40"
+          onClick={() => setIsMenuOpen(false)}
+        />
+      )}
     </>
   );
 };
